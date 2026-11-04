@@ -5,6 +5,23 @@ automatically by [release-please](https://github.com/googleapis/release-please)
 from [Conventional Commits](https://www.conventionalcommits.org/) — edit commit
 messages, not this file.
 
+## [0.3.0](https://github.com/jatmn/openrecall/compare/v0.2.1...v0.3.0) (2026-11-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* `GET /health` no longer returns `store`, and a namespace whose manifest cannot be parsed now answers 503 `manifest_unreadable` where it previously served an empty view. Without this footer release-please would cut a patch for a changed contract, because `bump-patch-for-minor-pre-major` is set.
+
+### Features
+
+* passphrase file, --version and standalone binaries ([#9](https://github.com/jatmn/openrecall/issues/9)) ([b4d4e07](https://github.com/jatmn/openrecall/commit/b4d4e077e4754d352e3132a0ded225fd961de0cf))
+
+
+### Bug Fixes
+
+* **ci:** resolve code scanning alerts ([#25](https://github.com/jatmn/openrecall/issues/25)) ([b2ab6b5](https://github.com/jatmn/openrecall/commit/b2ab6b535944ba4c11179ac3c8c2133fde3d65b7))
+* **tests:** prevent backtracking in frontmatter regex extraction ([#26](https://github.com/jatmn/openrecall/issues/26)) ([c0d0d64](https://github.com/jatmn/openrecall/commit/c0d0d64f6b80ec7231b978ccc74ec7f8cb827200))
+
 ## [0.2.1](https://github.com/Twigpine/openrecall/compare/v0.2.0...v0.2.1) (2026-11-03)
 
 
